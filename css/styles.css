@@ -1,0 +1,114 @@
+
+* {
+  /* height & width now includes border & padding */
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+h1 {
+  letter-spacing: 1.2rem;
+  font-size: 3rem;
+  margin: 1rem 0;
+
+}
+
+.flexColumnContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+
+}
+
+#player {
+  width: 20%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  float: right;
+  margin-top: 1rem;
+  padding: .5rem;
+}
+
+.row {
+  display: flex;
+  background-color: black;
+}
+
+.topRow {
+  border-top: .40rem solid blue;
+  border-right: .40rem solid blue;
+  border-left: .40rem solid blue;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px; 
+}
+
+.middleRow {
+  border-right: .40rem solid blue;
+  border-left: .40rem solid blue;
+}
+
+.bottomRow {
+  border-bottom: .40rem solid blue;
+  border-right: .40rem solid blue;
+  border-left: .40rem solid blue;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.cell {
+  width: 33%;
+  height: 10rem;
+  line-height: 10rem;
+  font-size: 700%;
+  flex-grow: 1;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+.middleVerticleCell {
+  border-right: .20rem solid blue;
+  border-left: .20rem solid blue;
+}
+
+.middleHorizontalCell {
+  border-top: .20rem solid blue;
+  border-bottom: .20rem solid blue;
+}
+
+.columnLeft {
+  margin-left: 1rem;
+}
+
+.columnRight {
+  margin-right: 1rem;
+}
+
+.topCell {
+  margin-top: 1rem;
+}
+
+.bottomCell {
+  margin-bottom: 1rem;
+}
+
+.resetButton {
+  float: left;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+  padding: .5rem;
+}
+
+#output {
+  height: 2.5rem;
+  font-size: 1.5rem;
+  align-self: flex-end;
+}

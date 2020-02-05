@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script defer src="js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="flexColumnContainer">
+        <h1>TIC &nbsp;TAC &nbsp;TOE</h1>
+        <section id = "gameStateBanner">
+            <p id="player">Player: <span id="playNum"></span></p>
+        </section>
+        <section class="row topRow">
+            <div data-id="1" class="cell topCell columnLeft"></div>
+            <div data-id="2" class="cell middleVerticleCell topCell"></div>
+            <div data-id="3" class="cell topCell columnRight"></div>
+        </section>
+        <section class="row middleRow">
+            <div data-id="4" class="cell middleHorizontalCell columnLeft"></div>
+            <div data-id="5" class="cell middleVerticleCell middleHorizontalCell"></div>
+            <div data-id="6" class="cell middleHorizontalCell columnRight"></div>
+        </section>
+        <section class="row bottomRow">
+            <div data-id="7" class="cell bottomCell columnLeft"></div>
+            <div data-id="8" class="cell middleVerticleCell bottomCell"></div>
+            <div data-id="9" class="cell bottomCell columnRight"></div>
+        </section>
+        <p id="output"></p>
+    </section>
+</body>
+</html>
