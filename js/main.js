@@ -18,6 +18,7 @@ const EIGTH_WIN_CONDITION = 7;
 
 let playerId;
 let gameOver;
+let checkOverflow;
 
 let BOARD = [
     [],
@@ -62,6 +63,8 @@ function markCell(event) {
     
     if(event.target.textContent !== 'X' && event.target.textContent !== 'O'
         && !gameOver) {
+
+        checkOverflow = 0;
 
         if(playerId === PLAYER_1) {
             event.target.textContent = 'X';
@@ -158,7 +161,7 @@ function checkWin(cell, player) {
 
 function checkForThree(boardRow) {
 
-    if(boardRow.length === 3) {
+    if(boardRow.length === 3 && !checkOverflow) {
 
         let total = 0;
 
@@ -176,6 +179,7 @@ function checkForThree(boardRow) {
         }else if(FULL_BOARD.length === FULL) {
             outputWinner.textContent = "DRAW...";
             gameOver = true;
+            checkOverflow = 1;
             reset(true);
         }
 
